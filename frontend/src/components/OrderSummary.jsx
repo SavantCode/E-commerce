@@ -6,8 +6,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import axios from "../lib/axios";
 
 const stripePromise = loadStripe(
-	"pk_test_51QnKsHAYM8JzwsQLqU870GnIxsNbc8b89ky843Sptzxs7raX5nDamuXhxXJpXL9j2PzuKi51CaCKZnSqcO39fxQd00CnVIf4G4"
-);
+"pk_test_51QnKsHAYM8JzwsQLqU870GnIxsNbc8b89ky843Sptzxs7raX5nDamuXhxXJpXL9j2PzuKi51CaCKZnSqcO39fxQd00CnVIf4G4");
 
 const OrderSummary = () => {
 	const { total, subtotal, coupon, isCouponApplied, cart } = useCartStore();
